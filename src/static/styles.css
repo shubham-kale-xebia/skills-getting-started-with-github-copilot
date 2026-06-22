@@ -58,20 +58,119 @@ section h3 {
 }
 
 .activity-card {
-  margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  margin-bottom: 18px;
+  padding: 22px;
+  border: none;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #ffffff 0%, #f7f8fe 100%);
+  box-shadow: 0 18px 40px rgba(24, 39, 102, 0.08);
 }
 
 .activity-card h4 {
   margin-bottom: 10px;
-  color: #0066cc;
+  color: #1a237e;
 }
 
 .activity-card p {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
+  color: #4a4a4a;
+}
+
+.activity-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 14px;
+}
+
+.activity-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(26, 35, 126, 0.1);
+  color: #1a237e;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.activity-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.participants-section {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid #e8eaf6;
+}
+
+.participants-title {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #3f51b5;
+}
+
+.participant-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background-color: #f3f4ff;
+}
+
+.participant-email {
+  color: #333;
+  font-size: 0.95rem;
+  overflow-wrap: anywhere;
+}
+
+.participant-item:last-child {
+  margin-bottom: 0;
+}
+
+.participant-none {
+  color: #7a7a7a;
+  font-style: italic;
+  padding: 10px 14px;
+  background-color: #f7f7f7;
+  border-radius: 999px;
+}
+
+.remove-participant-button {
+  min-width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background-color: #e8eaf6;
+  color: #303f9f;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.remove-participant-button:hover {
+  background-color: #c5cae9;
+  transform: translateY(-1px);
 }
 
 .form-group {
